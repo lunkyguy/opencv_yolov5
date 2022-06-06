@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.20)
+project(OpenCV_Yolov5)
+find_package(OpenCV CONFIG REQUIRED)
+add_executable(${CMAKE_PROJECT_NAME} main.cpp)
+target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE opencv_world)
